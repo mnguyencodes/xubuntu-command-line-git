@@ -13,3 +13,9 @@
 
 git config --global core.editor "code --wait"
 
+## Git Branches
+
+git branch
+git switch [branch-name]
+git switch --create [branch-name]
+
