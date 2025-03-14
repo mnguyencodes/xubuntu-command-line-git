@@ -8,6 +8,8 @@
 - git log
 - git restore --staged [file name]
 - git push origin main
+- git fetch origin
+- git pull
 
 ## Git Commit Message Editor
 
