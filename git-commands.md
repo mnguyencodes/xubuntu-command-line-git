@@ -8,3 +8,8 @@
 - git log
 - git restore --staged [file name]
 - git push origin main
+
+## Git Commit Message Editor
+
+git config --global core.editor "code --wait"
+
