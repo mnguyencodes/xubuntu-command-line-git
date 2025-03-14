@@ -8,6 +8,8 @@
 - git log
 - git restore --staged [file name]
 - git push origin main
+- git fetch origin
+- git pull
 
 ## Git Commit Message Editor
 
@@ -18,4 +20,4 @@ git config --global core.editor "code --wait"
 git branch
 git switch [branch-name]
 git switch --create [branch-name]
-
+git push origin [branch-name]
