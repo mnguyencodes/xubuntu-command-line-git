@@ -30,22 +30,33 @@ Create pull request (Requires Github CLI):
 
 ## Github CLI
 
+### Installation
+
 - sudo apt update
 - sudo apt install gh
 - sudo snap install gh
 - git auth login
 
 ? What account do you want to log into? 
-GitHub.com
+`GitHub.com`
 
 ? What is your preferred protocol for Git operations? 
-SSH
+`SSH`
 
 ? Upload your SSH public key to your GitHub account? 
-Skip
+`Skip`
 
 ? How would you like to authenticate GitHub CLI? 
-Login with a web browser
+`Login with a web browser`
+
+### Commands
+
+- gh pr create
+- gh pr list
+- gh pr view [pr number]
+    - gh pr view 3
+- gh pr merge [pr number]
+    - gh pr merge 3
 
 ### Github CLI Pull Request Message Editor
 
