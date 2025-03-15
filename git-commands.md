@@ -11,11 +11,11 @@
 - git fetch origin
 - git pull
 
-## Git Commit Message Editor
+### Git Commit Message Editor
 
 git config --global core.editor "code --wait"
 
-## Git Branches
+### Git Branches
 
 - git branch
 - git switch [branch-name]
@@ -46,6 +46,10 @@ Skip
 
 ? How would you like to authenticate GitHub CLI? 
 Login with a web browser
+
+### Github CLI Pull Request Message Editor
+
+- gh config set editor "code --wait"
 
 ## Install Node.js
 
