@@ -25,8 +25,27 @@ git config --global core.editor "code --wait"
 Rename current branch:
 - git branch -m [branch-name]
 
-Create pull request:
+Create pull request (Requires Github CLI):
 - gh pr create
+
+## Github CLI
+
+- sudo apt update
+- sudo apt install gh
+- sudo snap install gh
+- git auth login
+
+? What account do you want to log into? 
+GitHub.com
+
+? What is your preferred protocol for Git operations? 
+SSH
+
+? Upload your SSH public key to your GitHub account? 
+Skip
+
+? How would you like to authenticate GitHub CLI? 
+Login with a web browser
 
 ## Install Node.js
 
@@ -50,7 +69,7 @@ Verify nvm is installed:
 Verify Node.js is installed:
 - node -v
 
-## Node Console
+### Node Console
 
 You can use the Node console to debug snippets of code without opening your browser.
 - node
