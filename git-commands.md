@@ -17,10 +17,13 @@ git config --global core.editor "code --wait"
 
 ## Git Branches
 
-git branch
-git switch [branch-name]
-git switch --create [branch-name]
-git push origin [branch-name]
+- git branch
+- git switch [branch-name]
+- git switch --create [branch-name]
+- git push origin [branch-name]
+
+Rename current branch:
+- git branch -m [branch-name]
 
 ## Install Node.js
 
