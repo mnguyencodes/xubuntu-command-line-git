@@ -25,6 +25,9 @@ git config --global core.editor "code --wait"
 Rename current branch:
 - git branch -m [branch-name]
 
+Create pull request:
+- gh pr create
+
 ## Install Node.js
 
 ### Prerequisites
