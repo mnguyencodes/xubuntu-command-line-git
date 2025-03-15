@@ -21,3 +21,34 @@ git branch
 git switch [branch-name]
 git switch --create [branch-name]
 git push origin [branch-name]
+
+## Install Node.js
+
+### Prerequisites
+
+- sudo apt install curl
+- sudo apt update && sudo apt upgrade
+- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+
+`export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"`
+`[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm`
+
+Verify nvm is installed: 
+- command -v nvm
+
+### Installation
+
+- nvm install --lts
+- nvm use --lts
+
+Verify Node.js is installed:
+- node -v
+
+## Node Console
+
+You can use the Node console to debug snippets of code without opening your browser.
+- node
+
+To quit the console:
+- .exit
+
