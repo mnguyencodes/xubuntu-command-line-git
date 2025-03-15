@@ -47,7 +47,16 @@ Create pull request (Requires Github CLI):
 `Skip`
 
 ? How would you like to authenticate GitHub CLI? 
-Login with a web browser
+`Login with a web browser`
+
+### Commands
+
+- gh pr create
+- gh pr list
+- gh pr view [pr number]
+    - gh pr view 3
+- gh pr merge [pr number]
+    - gh pr merge 3
 
 ### Github CLI Pull Request Message Editor
 
