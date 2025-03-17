@@ -35,7 +35,7 @@ Create pull request (Requires Github CLI):
 - sudo apt update
 - sudo apt install gh
 - sudo snap install gh
-- git auth login
+- gh auth login
 
 ? What account do you want to log into? 
 `GitHub.com`
