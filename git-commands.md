@@ -1,6 +1,8 @@
 # My Git Commands Cheat Sheet
 
-## Install Git
+## Git
+
+### Installing Git
 
 Upgrade your linux system first:
 - sudo apt update
