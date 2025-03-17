@@ -21,7 +21,7 @@ https://github.com/
 
 
 
-## Common Git Commands
+### Common Git Commands
 
 - git clone git@github.com:USER-NAME/REPOSITORY-NAME.git
 - git remote -v
