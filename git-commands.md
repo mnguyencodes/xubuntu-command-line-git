@@ -19,6 +19,22 @@ Ensure that your Git version is at least v2.28:
 Create your Github account at:
 https://github.com/
 
+### Configuring Git
+
+Let Git know who you are:
+- git config --global user.name "Your Name"
+- git config --global user.email "yourname@example.com"
+
+Git changed the default branch from master to main. Change the default branch for Git:
+- git config --global init.defaultBranch main
+
+Set your default branch reconciliation:
+- git config --global pull.rebase false
+
+Verify your Git configuration:
+- git config --get user.name
+- git config --get user.email
+
 
 
 ### Common Git Commands
