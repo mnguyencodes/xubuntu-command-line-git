@@ -1,5 +1,26 @@
 # My Git Commands Cheat Sheet
 
+## Install Git
+
+Upgrade your linux system first:
+- sudo apt update
+- sudo apt upgrade
+
+Install Git using the following commands:
+- sudo add-apt-repository ppa:git-core/ppa
+- sudo apt update
+- sudo apt install git
+
+Ensure that your Git version is at least v2.28:
+- git --version
+
+Create your Github account at:
+https://github.com/
+
+
+
+## Common Git Commands
+
 - git clone git@github.com:USER-NAME/REPOSITORY-NAME.git
 - git remote -v
 - git status
