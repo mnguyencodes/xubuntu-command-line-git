@@ -1,5 +1,73 @@
 # My Git Commands Cheat Sheet
 
+## Git
+
+### Installing Git
+
+Upgrade your linux system first:
+- sudo apt update
+- sudo apt upgrade
+
+Install Git using the following commands:
+- sudo add-apt-repository ppa:git-core/ppa
+- sudo apt update
+- sudo apt install git
+
+Ensure that your Git version is at least v2.28:
+- git --version
+
+Create your Github account at:
+https://github.com/
+
+### Configuring Git
+
+Let Git know who you are:
+- git config --global user.name "Your Name"
+- git config --global user.email "yourname@example.com"
+
+Git changed the default branch from master to main. Change the default branch for Git:
+- git config --global init.defaultBranch main
+
+Set your default branch reconciliation:
+- git config --global pull.rebase false
+
+Verify your Git configuration:
+- git config --get user.name
+- git config --get user.email
+
+### Setup SSH Key
+
+Check if you already have an Ed25519 algorithm SSH key installed:
+- ls ~/.ssh/id_ed25519.pub
+
+If the message, “No such file or directory”, shows up on the console, you'll want to create a new SSH key:
+- ssh-keygen -t ed25519
+
+You'll be prompted for a location to save the SSH key. Press enter.
+
+Log into Github, click on your profile picture, click `Settings`.
+
+On the left, click `SSH and GPG Keys`.
+
+Click on the green button, `New SSH Key`.
+
+On the console, enter the command:
+- cat ~/.ssh/id_ed25519.pub
+
+Copy the entire output and paste it into the key field on Github.
+
+Follow the link below for instructions on testing your SSH connection:
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection?platform=linux
+
+The goal is to see the following message output on the console:
+
+"Hi username! You’ve successfully authenticated, but GitHub does not provide shell access."
+
+When you see the message above, you have successfully added your SSH key.
+
+### Common Git Commands
+
 - git clone git@github.com:USER-NAME/REPOSITORY-NAME.git
 - git remote -v
 - git status
