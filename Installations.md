@@ -1,8 +1,6 @@
-# My Git Commands Cheat Sheet
+# My Git Installation Instructions
 
-## Git
-
-### Installing Git
+## Installing Git
 
 Upgrade your linux system first:
 - sudo apt update
@@ -66,39 +64,13 @@ The goal is to see the following message output on the console:
 
 When you see the message above, you have successfully added your SSH key.
 
-### Common Git Commands
-
-- git clone git@github.com:USER-NAME/REPOSITORY-NAME.git
-- git remote -v
-- git status
-- git add [file name]
-- git commit -m "message"
-- git log
-- git restore --staged [file name]
-- git push origin main
-- git fetch origin
-- git pull
-
 ### Git Commit Message Editor
 
 git config --global core.editor "code --wait"
 
-### Git Branches
-
-- git branch
-- git switch [branch-name]
-- git switch --create [branch-name]
-- git push origin [branch-name]
-
-Rename current branch:
-- git branch -m [branch-name]
-
-Create pull request (Requires Github CLI):
-- gh pr create
-
 ## Github CLI
 
-### Installation
+### Installing Github CLI
 
 - sudo apt update
 - sudo apt install gh
@@ -116,15 +88,6 @@ Create pull request (Requires Github CLI):
 
 ? How would you like to authenticate GitHub CLI? 
 `Login with a web browser`
-
-### Commands
-
-- gh pr create
-- gh pr list
-- gh pr view [pr number]
-    - gh pr view 3
-- gh pr merge [pr number]
-    - gh pr merge 3
 
 ### Github CLI Pull Request Message Editor
 
@@ -159,4 +122,3 @@ You can use the Node console to debug snippets of code without opening your brow
 
 To quit the console:
 - .exit
-
