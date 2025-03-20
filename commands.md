@@ -28,9 +28,12 @@ Create pull request (Requires Github CLI):
 
 ## Github CLI Commands
 
+### Pull Requests
+
 - gh pr create
 - gh pr list
 - gh pr view [pr number]
     - gh pr view 3
 - gh pr merge [pr number]
     - gh pr merge 3
+
