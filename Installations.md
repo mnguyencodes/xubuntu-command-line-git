@@ -122,3 +122,58 @@ You can use the Node console to debug snippets of code without opening your brow
 
 To quit the console:
 - .exit
+
+## Install PostgreSQL
+
+### Prerequisites
+
+Ensure your OS is up to date:
+- sudo apt update && sudo apt upgrade
+
+### Installation
+
+Install PostgreSQL packages:
+- sudo apt install postgresql postgresql-contrib libpq-dev
+
+Start up the server:
+- sudo systemctl start postgresql.service && systemctl status postgresql.service
+
+### Set Up
+
+Create a new role that is the same as your Linux username.
+
+Use the following command to find out your username:
+- whoami
+
+Then issue this command:
+- sudo -i -u postgres createuser --interactive
+
+Ensure that your username and role name are the same.
+
+Each role must have its own database of the same name.
+
+- sudo -i -u postgres createdb `linux_username`
+
+#### Setting up a Password
+
+Get into PostgreSQL:
+- psql
+
+You should see:
+role_name=#
+or...
+linux_username=# 
+
+(your linux_username should be the same as the role_name!)
+
+Create your password. You'll be prompted to enter it twice.
+- \password `role_name`
+
+Configure permissions for the role:
+- GRANT ALL PRIVILEGES ON DATABASE `role_database_name` TO `role_name`;
+
+Save the password to the environment:
+- echo 'export DATABASE_PASSWORD="`role_password`"' >> ~/.bashrc
+
+Reload the terminal and you've successfully installed and set up PostgreSQL.
+
