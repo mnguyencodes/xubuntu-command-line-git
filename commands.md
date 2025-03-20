@@ -37,3 +37,13 @@ Create pull request (Requires Github CLI):
 - gh pr merge [pr number]
     - gh pr merge 3
 
+## Issues
+
+- gh issue create
+- gh issue list
+- gh issue list --state "closed"
+- gh issue edit `issue-number`
+- gh issue close `issue-number`
+- gh issue reopen `issue-number`
+- gh issue comment `issue-number`
+
