@@ -2,6 +2,7 @@
 
 ## Common Git Commands
 
+- git init
 - git clone git@github.com:USER-NAME/REPOSITORY-NAME.git
 - git remote -v
 - git status
@@ -27,6 +28,17 @@ Create pull request (Requires Github CLI):
 - gh pr create
 
 ## Github CLI Commands
+
+### Create Repo
+
+1. git init
+2. gh repo create `repo-name` --source=. --public
+
+When pushing for the first time, be sure to run:
+
+3. git push -u origin main
+
+The -u flag creates a tracking relationship between the local branch and the remote branch. This means Git now associates your local branch (e.g., main) with the corresponding branch on the remote (e.g., origin/main).
 
 ### Pull Requests
 
