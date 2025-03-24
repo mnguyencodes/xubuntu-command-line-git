@@ -27,6 +27,9 @@ Rename current branch:
 Create pull request (Requires Github CLI):
 - gh pr create
 
+Delete branch:
+- git branch -d `branch-name`
+
 ## Github CLI Commands
 
 ### Create Repo
