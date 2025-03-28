@@ -30,6 +30,12 @@ Create pull request (Requires Github CLI):
 Delete branch:
 - git branch -d `branch-name`
 
+Set tracking information for your current branch:
+- git branch --set-upstream-to=origin/`branch` `current-branch`
+
+For example:
+- git branch --set-upstream-to=origin/main XCLI-42-Add-More-Commands
+
 ## Github CLI Commands
 
 ### Create Repo
