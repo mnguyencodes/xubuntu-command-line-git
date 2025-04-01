@@ -16,6 +16,14 @@
 
 ## Git Branches
 
+### Best Practice
+
+For best practice, you should always make your changes on the correct branch.
+
+Before you even start making any changes, switch over to the correct branch or create one!
+
+Then, issue the command: `git pull`, to ensure that your local branch is up-to-date.
+
 - git branch
 - git switch [branch-name] / git checkout [branch-name]
 - git switch --create [branch-name] / git checkout -b [branch-name]
