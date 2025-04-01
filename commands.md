@@ -16,9 +16,20 @@
 
 ## Git Branches
 
+### Best Practice
+
+For best practice, you should always make your changes on the correct branch.
+
+Before you even start making any changes, switch over to the correct branch or create one!
+
+Then, issue the command: `git pull`, to ensure that your local branch is up-to-date.
+
+### Common Git Branch Commands
+
 - git branch
-- git switch `branch-name`
-- git switch --create `branch-name`
+- git switch `branch-name` / git checkout `branch-name`
+- git switch --create `branch-name` / git checkout [-b] `branch-name`
+
 - git push origin `branch-name`
 
 Rename current branch:
@@ -26,6 +37,17 @@ Rename current branch:
 
 Create pull request (Requires Github CLI):
 - gh pr create
+
+### Oops, You Made Changes On The Wrong Branch By Mistake
+
+Without thinking, you started making changes on Main but you want changes you made on Main to be brought over to `branch-name`.
+
+To fix this, issue the following commands:
+
+1. git stash
+2. git switch [--create] `branch-name` / git checkout -b `branch-name`
+3. git stash pop
+4. git rebase main
 
 Delete branch:
 - git branch -d `branch-name`
@@ -35,6 +57,7 @@ Set tracking information for your current branch:
 
 For example:
 - git branch --set-upstream-to=origin/main XCLI-42-Add-More-Commands
+
 
 ## Github CLI Commands
 
