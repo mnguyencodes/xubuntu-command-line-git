@@ -35,6 +35,17 @@ Rename current branch:
 Create pull request (Requires Github CLI):
 - gh pr create
 
+### Oops, You Made Changes On The Wrong Branch By Mistake
+
+Without thinking, you started making changes on Main but you want changes you made on Main to be brought over to `branch-name`.
+
+To fix this, issue the following commands:
+
+1. git stash
+2. git switch [--create] `branch-name` / git checkout -b `branch-name`
+3. git stash pop
+4. git rebase main
+
 ## Github CLI Commands
 
 ### Create Repo
