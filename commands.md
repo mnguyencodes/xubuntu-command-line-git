@@ -17,8 +17,8 @@
 ## Git Branches
 
 - git branch
-- git switch [branch-name]
-- git switch --create [branch-name]
+- git switch [branch-name] / git checkout [branch-name]
+- git switch --create [branch-name] / git checkout -b [branch-name]
 - git push origin [branch-name]
 
 Rename current branch:
