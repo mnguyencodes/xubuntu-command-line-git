@@ -24,13 +24,15 @@ Before you even start making any changes, switch over to the correct branch or c
 
 Then, issue the command: `git pull`, to ensure that your local branch is up-to-date.
 
+### Common Git Branch Commands
+
 - git branch
-- git switch [branch-name] / git checkout [branch-name]
-- git switch --create [branch-name] / git checkout -b [branch-name]
-- git push origin [branch-name]
+- git switch `branch-name` / git checkout `branch-name`
+- git switch --create `branch-name` / git checkout [-b] `branch-name`
+- git push origin `branch-name`
 
 Rename current branch:
-- git branch -m [branch-name]
+- git branch -m `branch-name`
 
 Create pull request (Requires Github CLI):
 - gh pr create
