@@ -53,6 +53,23 @@ By running the two commands above, you ensure that your local branch is up-to-da
 `git fetch`: Retrieves updates from the remote repository but does not apply them to your branch.
 `git pull origin branch-name`: Combines fetching and applying the updates directly to your branch.
 
+### Oops, You Made Changes On The Wrong Branch By Mistake
+
+Without thinking, you started making changes on Main but you want changes you made on Main to be brought over to `branch-name`.
+
+To fix this, issue the following commands:
+
+1. git stash
+2. git switch [--create] `branch-name` / git checkout -b `branch-name`
+3. git stash pop
+4. git rebase main
+
+If you get `No local changes to save`, then simply continue to step 2, as you will have no issues!
+
+But why did you get `No local changes to save`? You've added in a new file and issued `git stash` but have no local changes for some reason?
+
+That's because new files are `untracked` and are not stashed by default. This means that if you were to make a change to any existing files that are already tracked, then you would be able to issue the `git stash` command successfully.
+
 ### Common Git Branch Commands
 
 - git branch
@@ -66,17 +83,6 @@ Rename current branch:
 
 Create pull request (Requires Github CLI):
 - gh pr create
-
-### Oops, You Made Changes On The Wrong Branch By Mistake
-
-Without thinking, you started making changes on Main but you want changes you made on Main to be brought over to `branch-name`.
-
-To fix this, issue the following commands:
-
-1. git stash
-2. git switch [--create] `branch-name` / git checkout -b `branch-name`
-3. git stash pop
-4. git rebase main
 
 Delete branch:
 - git branch -d `branch-name`

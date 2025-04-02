@@ -1,0 +1,5 @@
+I have created this file on the main branch but only realized that after the fact.
+
+Let's follow the instructions I've made in the: `Oops, You Made Changes On The Wrong Branch By Mistake` section for practice.
+
+Interesting, upon running: git stash, I get the messsage "No local changes to save."
