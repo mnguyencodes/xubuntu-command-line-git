@@ -24,6 +24,35 @@ Before you even start making any changes, switch over to the correct branch or c
 
 Then, issue the command: `git pull`, to ensure that your local branch is up-to-date.
 
+### Pushing Your Local Branch For The First Time
+
+After creating a local branch, follow this workflow for best practice:
+
+1. Make your changes (reminder that this must be done on the correct local branch, NOT on main!)
+2. Add your changes with `git add`.
+3. Commit your changes with `git commit`.
+4. When you're ready to push your changes, use `git push -u origin branch-name`.
+
+### After Pushing Your Local Branch For The First Time
+
+After you have pushed your local branch for the first time, you can either:
+
+1. Create a pull request.
+
+or
+
+2. Leave the branch as-is.
+
+If you are doing #2 and especially if the branch is collaborative, it's ideal that you run the following two commands the next time you continue working on that branch:
+
+1. `git fetch`
+2. `git pull origin branch-name`
+
+By running the two commands above, you ensure that your local branch is up-to-date with any changes that any one else might have made.
+
+`git fetch`: Retrieves updates from the remote repository but does not apply them to your branch.
+`git pull origin branch-name`: Combines fetching and applying the updates directly to your branch.
+
 ### Common Git Branch Commands
 
 - git branch
@@ -57,7 +86,6 @@ Set tracking information for your current branch:
 
 For example:
 - git branch --set-upstream-to=origin/main XCLI-42-Add-More-Commands
-
 
 ## Github CLI Commands
 
