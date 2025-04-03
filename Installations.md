@@ -173,7 +173,9 @@ Configure permissions for the role:
 - GRANT ALL PRIVILEGES ON DATABASE `role_database_name` TO `role_name`;
 
 Save the password to the environment:
-- echo 'export DATABASE_PASSWORD="`role_password`"' >> ~/.bashrc
+
+1. Exit out of psql using `\q`
+2. echo 'export DATABASE_PASSWORD="`role_password`"' >> ~/.bashrc
 
 Reload the terminal and you've successfully installed and set up PostgreSQL.
 
