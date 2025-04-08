@@ -49,6 +49,8 @@ If you are doing #2 and especially if the branch is collaborative, it's ideal th
 1. `git fetch`
 2. `git pull origin branch-name`
 
+Note: 'origin branch-name' is not necessary if you have included -u in step 4 of the previous section.
+
 By running the two commands above, you ensure that your local branch is up-to-date with any changes that any one else might have made.
 
 `git fetch`: Retrieves updates from the remote repository but does not apply them to your branch.
