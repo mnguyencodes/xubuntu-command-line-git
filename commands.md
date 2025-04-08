@@ -56,6 +56,23 @@ By running the two commands above, you ensure that your local branch is up-to-da
 `git fetch`: Retrieves updates from the remote repository but does not apply them to your branch.
 `git pull origin branch-name`: Combines fetching and applying the updates directly to your branch.
 
+### You have tons of branches when issuing `git branch -r`
+
+So you've successfully had several pull requests made, approved, and merged into main. Then after, you choose to have the branch deleted locally and on origin.
+
+However, when you issue the command `git branch -r`, you still see a listing of every branch you've worked on.
+
+Unfortunately, When you delete a remote branch, there is no git command to automtatically remove the local tracking branch.
+
+There's a fix for this, though!
+
+`git remote prune origin`
+
+Alternatively, you can always do this at the start of development:
+
+`git fetch --prune`
+`git pull`
+
 ### Oops, You Made Changes On The Wrong Branch By Mistake
 
 Without thinking, you started making changes on Main but you want changes you made on Main to be brought over to `branch-name`.
