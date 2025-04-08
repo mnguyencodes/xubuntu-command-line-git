@@ -13,6 +13,7 @@
 - git push origin main
 - git fetch origin
 - git pull
+- git branch -r 
 
 ## Git Branches
 
