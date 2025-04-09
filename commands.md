@@ -139,7 +139,7 @@ That's because new files are `untracked` and are not stashed by default. This me
 - git switch `branch-name` / git checkout `branch-name`
 - git switch --create `branch-name` / git checkout [-b] `branch-name`
 
-- git push origin `branch-name`
+- git push -u origin `branch-name`
 
 Rename current branch:
 - git branch -m `branch-name`
