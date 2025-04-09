@@ -25,6 +25,10 @@ Before you even start making any changes, switch over to the correct branch or c
 
 Then, issue the command: `git pull`, to ensure that your local branch is up-to-date.
 
+Note: If you have just created a new branch, there is no need to pull. This is because this branch is not yet tracking a branch on origin. Thus, when you push for the first time, you want to issue the following command:
+
+`git push -u origin branch-name`
+
 ### Pushing Your Local Branch For The First Time
 
 After creating a local branch, follow this workflow for best practice:
