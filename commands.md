@@ -150,6 +150,9 @@ Create pull request (Requires Github CLI):
 Delete branch:
 - git branch -d `branch-name`
 
+Delete branch on origin:
+- git push origin --delete `branch-name`
+
 Set tracking information for your current branch:
 - git branch --set-upstream-to=origin/`branch` `current-branch`
 
