@@ -177,12 +177,14 @@ The -u flag creates a tracking relationship between the local branch and the rem
     - gh pr view 3
 - gh pr merge `pr-number`
     - gh pr merge 3
+- gh pr comment `pr-number`
+- gh pr close `pr-number`
 
 ## Issues
 
 - gh issue create
 - gh issue list
-- gh issue list --state "closed"
+- gh issue list --state closed
 - gh issue edit `issue-number`
 - gh issue close `issue-number`
 - gh issue reopen `issue-number`
