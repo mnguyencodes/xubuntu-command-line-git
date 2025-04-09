@@ -139,7 +139,7 @@ That's because new files are `untracked` and are not stashed by default. This me
 - git switch `branch-name` / git checkout `branch-name`
 - git switch --create `branch-name` / git checkout [-b] `branch-name`
 
-- git push origin `branch-name`
+- git push -u origin `branch-name`
 
 Rename current branch:
 - git branch -m `branch-name`
@@ -149,6 +149,9 @@ Create pull request (Requires Github CLI):
 
 Delete branch:
 - git branch -d `branch-name`
+
+Delete branch on origin:
+- git push origin --delete `branch-name`
 
 Set tracking information for your current branch:
 - git branch --set-upstream-to=origin/`branch` `current-branch`
