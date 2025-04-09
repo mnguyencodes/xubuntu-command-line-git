@@ -3,3 +3,5 @@ I have created this file on the main branch but only realized that after the fac
 Let's follow the instructions I've made in the: `Oops, You Made Changes On The Wrong Branch By Mistake` section for practice.
 
 Interesting, upon running: git stash, I get the messsage "No local changes to save."
+
+I've made a change this this file to do a test commit on Main. After committing to main, I will then create a new branch, 'test-branch' and then create a pull request on that branch. Then I'll check the commit history on Main to see if the test commit still exists.
