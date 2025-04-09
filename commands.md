@@ -73,6 +73,45 @@ Alternatively, you can always do this at the start of development:
 `git fetch --prune`
 `git pull`
 
+### Modifying Commits
+
+NOTE: For best practice, this should only be done for commits that have NOT yet been pushed to origin! If you rewrite commits that have already been pushed, other devs pulling from the remote repository will encounter conflicts because their local history no longer matches the rewritten history on the remote.
+
+So you've made several commits but realize there's a little type you've made in an earlier commit.
+
+Let's say you have the following 4 commits in this order:
+
+1. Add README.md
+2. Add index.html
+3. Add index.css
+4. Add index.js
+
+You're checking over your work and you notice a type in the README. You can simply edit that commit PRIOR to pushing it to origin using:
+
+`git rebase -i HEAD~4`
+
+In this situation, you want to edit the first commit and since you have a total of 4 commits made, you want the number after head to be 4.
+
+After issuing the command, edit one of the `pick` options to `edit` to edit that specific commit.
+
+Then you will see output that looks like this:
+
+```md
+You can amend the commit now, with
+
+  git commit --amend 
+
+Once you are satisfied with your changes, run
+
+  git rebase --continue
+```
+
+Essentially what this means is that you can start making any changes. Once you're finished with your changes, follow up with:
+
+1. `git add file-name(s)` or `git add .` if it's just one file.
+2. `git commit --amend`
+3. `git rebase --continue`
+
 ### Oops, You Made Changes On The Wrong Branch By Mistake
 
 Without thinking, you started making changes on Main but you want changes you made on Main to be brought over to `branch-name`.
